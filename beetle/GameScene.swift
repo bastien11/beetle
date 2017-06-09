@@ -48,7 +48,22 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
             //3
             self.bird.run(repeatActionBird)
             
-            //TODO: add pillars here
+            //1
+            let spawn = SKAction.run({
+                () in
+                self.wallPair = self.createWalls()
+                self.addChild(self.wallPair)
+            })
+            //2
+            let delay = SKAction.wait(forDuration: 1.5)
+            let SpawnDelay = SKAction.sequence([spawn, delay])
+            let spawnDelayForever = SKAction.repeatForever(SpawnDelay)
+            self.run(spawnDelayForever)
+            //3
+            let distance = CGFloat(self.frame.width + wallPair.frame.width)
+            let movePillars = SKAction.moveBy(x: -distance - 50, y: 0, duration: TimeInterval(0.008 * distance))
+            let removePillars = SKAction.removeFromParent()
+            moveAndRemove = SKAction.sequence([movePillars, removePillars])
             
             bird.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
             bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 40))
