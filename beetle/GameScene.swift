@@ -26,7 +26,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     
     //CREATE THE BIRD ATLAS FOR ANIMATION
     let birdAtlas = SKTextureAtlas(named:"player")
-    var birdSprites = Array()
+    var birdSprites = Array<Any>()
     var bird = SKSpriteNode()
     var repeatActionBird = SKAction()
     
@@ -83,7 +83,18 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
         self.addChild(bird)
         
         //PREPARE TO ANIMATE THE BIRD AND REPEAT THE ANIMATION FOREVER
-        let animateBird = SKAction.animate(with: self.birdSprites, timePerFrame: 0.1)
+        let animateBird = SKAction.animate(with: self.birdSprites as! [SKTexture], timePerFrame: 0.1)
         self.repeatActionBird = SKAction.repeatForever(animateBird)
+        
+        scoreLbl = createScoreLabel()
+        self.addChild(scoreLbl)
+        
+        highscoreLbl = createHighscoreLabel()
+        self.addChild(highscoreLbl)
+        
+        createLogo()
+        
+        taptoplayLbl = createTaptoplayLabel()
+        self.addChild(taptoplayLbl)
     }
 }
