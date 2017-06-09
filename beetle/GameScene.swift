@@ -121,12 +121,12 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
                 pauseBtn.removeFromParent()
                 self.bird.removeAllActions()
             }
-        } else if firstBody.categoryBitMask == CollisionBitMask.birdCategory && secondBody.categoryBitMask == CollisionBitMask.flowerCategory {
+        } else if firstBody.categoryBitMask == CollisionBitMask.birdCategory && secondBody.categoryBitMask == CollisionBitMask.beerCategory {
             run(coinSound)
             score += 1
             scoreLbl.text = "\(score)"
             secondBody.node?.removeFromParent()
-        } else if firstBody.categoryBitMask == CollisionBitMask.flowerCategory && secondBody.categoryBitMask == CollisionBitMask.birdCategory {
+        } else if firstBody.categoryBitMask == CollisionBitMask.beerCategory && secondBody.categoryBitMask == CollisionBitMask.birdCategory {
             run(coinSound)
             score += 1
             scoreLbl.text = "\(score)"
