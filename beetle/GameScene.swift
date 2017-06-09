@@ -41,4 +41,16 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
+    
+    func createScene() {
+        self.physicsBody = SKPhysicsBody(edgeLoopFrom: self.frame)
+        self.physicsBody?.categoryBitMask = CollisionBitMask.groundCategory
+        self.physicsBody?.collisionBitMask = CollisionBitMask.birdCategory
+        self.physicsBody?.contactTestBitMask = CollisionBitMask.birdCategory
+        self.physicsBody?.isDynamic = false
+        self.physicsBody?.affectedByGravity = false
+        
+        self.physicsWorld.contactDelegate = self
+        self.backgroundColor = SKColor(red: 80.0/255.0, green: 192.0/255.0, blue: 203.0/255.0, alpha: 1.0)
+    }
 }
