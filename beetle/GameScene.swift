@@ -36,6 +36,55 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
+        
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        11
+        12
+        13
+        14
+        15
+        16
+        17
+        18
+        19
+        20
+        21
+        22
+        23
+        24
+        if isGameStarted == false{
+            //1
+            isGameStarted =  true
+            bird.physicsBody?.affectedByGravity = true
+            createPauseBtn()
+            //2
+            logoImg.run(SKAction.scale(to: 0.5, duration: 0.3), completion: {
+                self.logoImg.removeFromParent()
+            })
+            taptoplayLbl.removeFromParent()
+            //3
+            self.bird.run(repeatActionBird)
+            
+            //TODO: add pillars here
+            
+            bird.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+            bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 40))
+        } else {
+            //4
+            if isDied == false {
+                bird.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+                bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 40))
+            }
+        }
     }
     
     override func update(_ currentTime: TimeInterval) {
