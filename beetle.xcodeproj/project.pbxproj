@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		762C13D51EEAC55F00D484E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762C13D41EEAC55F00D484E2 /* AppDelegate.swift */; };
+		762C13D71EEAC55F00D484E2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 762C13D61EEAC55F00D484E2 /* GameScene.sks */; };
+		762C13D91EEAC55F00D484E2 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 762C13D81EEAC55F00D484E2 /* Actions.sks */; };
+		762C13DB1EEAC55F00D484E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762C13DA1EEAC55F00D484E2 /* GameScene.swift */; };
+		762C13DD1EEAC55F00D484E2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762C13DC1EEAC55F00D484E2 /* GameViewController.swift */; };
+		762C13E01EEAC55F00D484E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762C13DE1EEAC55F00D484E2 /* Main.storyboard */; };
+		762C13E21EEAC55F00D484E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 762C13E11EEAC55F00D484E2 /* Assets.xcassets */; };
+		762C13E51EEAC55F00D484E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762C13E31EEAC55F00D484E2 /* LaunchScreen.storyboard */; };
+		762C13F01EEAC55F00D484E2 /* beetleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762C13EF1EEAC55F00D484E2 /* beetleTests.swift */; };
+		762C13FB1EEAC55F00D484E2 /* beetleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762C13FA1EEAC55F00D484E2 /* beetleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		762C13EC1EEAC55F00D484E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 762C13C91EEAC55F00D484E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 762C13D01EEAC55F00D484E2;
+			remoteInfo = beetle;
+		};
+		762C13F71EEAC55F00D484E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 762C13C91EEAC55F00D484E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 762C13D01EEAC55F00D484E2;
+			remoteInfo = beetle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		762C13D11EEAC55F00D484E2 /* beetle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beetle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		762C13D41EEAC55F00D484E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		762C13D61EEAC55F00D484E2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		762C13D81EEAC55F00D484E2 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		762C13DA1EEAC55F00D484E2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		762C13DC1EEAC55F00D484E2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		762C13DF1EEAC55F00D484E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		762C13E11EEAC55F00D484E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		762C13E41EEAC55F00D484E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		762C13E61EEAC55F00D484E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		762C13EB1EEAC55F00D484E2 /* beetleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beetleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		762C13EF1EEAC55F00D484E2 /* beetleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beetleTests.swift; sourceTree = "<group>"; };
+		762C13F11EEAC55F00D484E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		762C13F61EEAC55F00D484E2 /* beetleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beetleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		762C13FA1EEAC55F00D484E2 /* beetleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beetleUITests.swift; sourceTree = "<group>"; };
+		762C13FC1EEAC55F00D484E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		762C13CE1EEAC55F00D484E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		762C13E81EEAC55F00D484E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		762C13F31EEAC55F00D484E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		762C13C81EEAC55F00D484E2 = {
+			isa = PBXGroup;
+			children = (
+				762C13D31EEAC55F00D484E2 /* beetle */,
+				762C13EE1EEAC55F00D484E2 /* beetleTests */,
+				762C13F91EEAC55F00D484E2 /* beetleUITests */,
+				762C13D21EEAC55F00D484E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		762C13D21EEAC55F00D484E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				762C13D11EEAC55F00D484E2 /* beetle.app */,
+				762C13EB1EEAC55F00D484E2 /* beetleTests.xctest */,
+				762C13F61EEAC55F00D484E2 /* beetleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		762C13D31EEAC55F00D484E2 /* beetle */ = {
+			isa = PBXGroup;
+			children = (
+				762C13D41EEAC55F00D484E2 /* AppDelegate.swift */,
+				762C13D61EEAC55F00D484E2 /* GameScene.sks */,
+				762C13D81EEAC55F00D484E2 /* Actions.sks */,
+				762C13DA1EEAC55F00D484E2 /* GameScene.swift */,
+				762C13DC1EEAC55F00D484E2 /* GameViewController.swift */,
+				762C13DE1EEAC55F00D484E2 /* Main.storyboard */,
+				762C13E11EEAC55F00D484E2 /* Assets.xcassets */,
+				762C13E31EEAC55F00D484E2 /* LaunchScreen.storyboard */,
+				762C13E61EEAC55F00D484E2 /* Info.plist */,
+			);
+			path = beetle;
+			sourceTree = "<group>";
+		};
+		762C13EE1EEAC55F00D484E2 /* beetleTests */ = {
+			isa = PBXGroup;
+			children = (
+				762C13EF1EEAC55F00D484E2 /* beetleTests.swift */,
+				762C13F11EEAC55F00D484E2 /* Info.plist */,
+			);
+			path = beetleTests;
+			sourceTree = "<group>";
+		};
+		762C13F91EEAC55F00D484E2 /* beetleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				762C13FA1EEAC55F00D484E2 /* beetleUITests.swift */,
+				762C13FC1EEAC55F00D484E2 /* Info.plist */,
+			);
+			path = beetleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		762C13D01EEAC55F00D484E2 /* beetle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 762C13FF1EEAC55F00D484E2 /* Build configuration list for PBXNativeTarget "beetle" */;
+			buildPhases = (
+				762C13CD1EEAC55F00D484E2 /* Sources */,
+				762C13CE1EEAC55F00D484E2 /* Frameworks */,
+				762C13CF1EEAC55F00D484E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beetle;
+			productName = beetle;
+			productReference = 762C13D11EEAC55F00D484E2 /* beetle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		762C13EA1EEAC55F00D484E2 /* beetleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 762C14021EEAC55F00D484E2 /* Build configuration list for PBXNativeTarget "beetleTests" */;
+			buildPhases = (
+				762C13E71EEAC55F00D484E2 /* Sources */,
+				762C13E81EEAC55F00D484E2 /* Frameworks */,
+				762C13E91EEAC55F00D484E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				762C13ED1EEAC55F00D484E2 /* PBXTargetDependency */,
+			);
+			name = beetleTests;
+			productName = beetleTests;
+			productReference = 762C13EB1EEAC55F00D484E2 /* beetleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		762C13F51EEAC55F00D484E2 /* beetleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 762C14051EEAC55F00D484E2 /* Build configuration list for PBXNativeTarget "beetleUITests" */;
+			buildPhases = (
+				762C13F21EEAC55F00D484E2 /* Sources */,
+				762C13F31EEAC55F00D484E2 /* Frameworks */,
+				762C13F41EEAC55F00D484E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				762C13F81EEAC55F00D484E2 /* PBXTargetDependency */,
+			);
+			name = beetleUITests;
+			productName = beetleUITests;
+			productReference = 762C13F61EEAC55F00D484E2 /* beetleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		762C13C91EEAC55F00D484E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = bastael;
+				TargetAttributes = {
+					762C13D01EEAC55F00D484E2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					762C13EA1EEAC55F00D484E2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 762C13D01EEAC55F00D484E2;
+					};
+					762C13F51EEAC55F00D484E2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 762C13D01EEAC55F00D484E2;
+					};
+				};
+			};
+			buildConfigurationList = 762C13CC1EEAC55F00D484E2 /* Build configuration list for PBXProject "beetle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 762C13C81EEAC55F00D484E2;
+			productRefGroup = 762C13D21EEAC55F00D484E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				762C13D01EEAC55F00D484E2 /* beetle */,
+				762C13EA1EEAC55F00D484E2 /* beetleTests */,
+				762C13F51EEAC55F00D484E2 /* beetleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		762C13CF1EEAC55F00D484E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762C13E01EEAC55F00D484E2 /* Main.storyboard in Resources */,
+				762C13D71EEAC55F00D484E2 /* GameScene.sks in Resources */,
+				762C13E21EEAC55F00D484E2 /* Assets.xcassets in Resources */,
+				762C13E51EEAC55F00D484E2 /* LaunchScreen.storyboard in Resources */,
+				762C13D91EEAC55F00D484E2 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		762C13E91EEAC55F00D484E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		762C13F41EEAC55F00D484E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		762C13CD1EEAC55F00D484E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762C13DB1EEAC55F00D484E2 /* GameScene.swift in Sources */,
+				762C13DD1EEAC55F00D484E2 /* GameViewController.swift in Sources */,
+				762C13D51EEAC55F00D484E2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		762C13E71EEAC55F00D484E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762C13F01EEAC55F00D484E2 /* beetleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		762C13F21EEAC55F00D484E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762C13FB1EEAC55F00D484E2 /* beetleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		762C13ED1EEAC55F00D484E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 762C13D01EEAC55F00D484E2 /* beetle */;
+			targetProxy = 762C13EC1EEAC55F00D484E2 /* PBXContainerItemProxy */;
+		};
+		762C13F81EEAC55F00D484E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 762C13D01EEAC55F00D484E2 /* beetle */;
+			targetProxy = 762C13F71EEAC55F00D484E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		762C13DE1EEAC55F00D484E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				762C13DF1EEAC55F00D484E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		762C13E31EEAC55F00D484E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				762C13E41EEAC55F00D484E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		762C13FD1EEAC55F00D484E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		762C13FE1EEAC55F00D484E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		762C14001EEAC55F00D484E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = beetle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bastael.beetle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		762C14011EEAC55F00D484E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = beetle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bastael.beetle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		762C14031EEAC55F00D484E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = beetleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bastael.beetleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beetle.app/beetle";
+			};
+			name = Debug;
+		};
+		762C14041EEAC55F00D484E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = beetleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bastael.beetleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beetle.app/beetle";
+			};
+			name = Release;
+		};
+		762C14061EEAC55F00D484E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = beetleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bastael.beetleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = beetle;
+			};
+			name = Debug;
+		};
+		762C14071EEAC55F00D484E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = beetleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bastael.beetleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = beetle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		762C13CC1EEAC55F00D484E2 /* Build configuration list for PBXProject "beetle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				762C13FD1EEAC55F00D484E2 /* Debug */,
+				762C13FE1EEAC55F00D484E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		762C13FF1EEAC55F00D484E2 /* Build configuration list for PBXNativeTarget "beetle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				762C14001EEAC55F00D484E2 /* Debug */,
+				762C14011EEAC55F00D484E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		762C14021EEAC55F00D484E2 /* Build configuration list for PBXNativeTarget "beetleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				762C14031EEAC55F00D484E2 /* Debug */,
+				762C14041EEAC55F00D484E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		762C14051EEAC55F00D484E2 /* Build configuration list for PBXNativeTarget "beetleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				762C14061EEAC55F00D484E2 /* Debug */,
+				762C14071EEAC55F00D484E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 762C13C91EEAC55F00D484E2 /* Project object */;
+}
