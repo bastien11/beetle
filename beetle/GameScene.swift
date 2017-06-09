@@ -8,7 +8,27 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene , SKPhysicsContactDelegate {
+    
+    var isGameStarted = Bool(false)
+    var isDied = Bool(false)
+    let coinSound = SKAction.playSoundFileNamed("CoinSound.mp3", waitForCompletion: false)
+    
+    var score = Int(0)
+    var scoreLbl = SKLabelNode()
+    var highscoreLbl = SKLabelNode()
+    var taptoplayLbl = SKLabelNode()
+    var restartBtn = SKSpriteNode()
+    var pauseBtn = SKSpriteNode()
+    var logoImg = SKSpriteNode()
+    var wallPair = SKNode()
+    var moveAndRemove = SKAction()
+    
+    //CREATE THE BIRD ATLAS FOR ANIMATION
+    let birdAtlas = SKTextureAtlas(named:"player")
+    var birdSprites = Array()
+    var bird = SKSpriteNode()
+    var repeatActionBird = SKAction()
     
     override func didMove(to view: SKView) {
         
