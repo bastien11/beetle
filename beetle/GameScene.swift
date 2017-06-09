@@ -164,4 +164,13 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
         taptoplayLbl = createTaptoplayLabel()
         self.addChild(taptoplayLbl)
     }
+    
+    func restartScene(){
+        self.removeAllChildren()
+        self.removeAllActions()
+        isDied = false
+        isGameStarted = false
+        score = 0
+        createScene()
+    }
 }
