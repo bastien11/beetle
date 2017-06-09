@@ -74,6 +74,35 @@ class GameScene: SKScene , SKPhysicsContactDelegate {
                 bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 40))
             }
         }
+        
+        for touch in touches{
+            let location = touch.location(in: self)
+            //1
+            if isDied == true{
+                if restartBtn.contains(location){
+                    if UserDefaults.standard.object(forKey: "highestScore") != nil {
+                        let hscore = UserDefaults.standard.integer(forKey: "highestScore")
+                        if hscore < Int(scoreLbl.text!)!{
+                            UserDefaults.standard.set(scoreLbl.text, forKey: "highestScore")
+                        }
+                    } else {
+                        UserDefaults.standard.set(0, forKey: "highestScore")
+                    }
+                    restartScene()
+                }
+            } else {
+                //2
+                if pauseBtn.contains(location){
+                    if self.isPaused == false{
+                        self.isPaused = true
+                        pauseBtn.texture = SKTexture(imageNamed: "play")
+                    } else {
+                        self.isPaused = false
+                        pauseBtn.texture = SKTexture(imageNamed: "pause")
+                    }
+                }
+            }
+        }
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
